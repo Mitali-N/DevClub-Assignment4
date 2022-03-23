@@ -1,0 +1,254 @@
+.nav-wrapper.cyan.lighten-3 img{
+    margin: 0.01% 1% 0%;
+    width: 5vw;
+    height:auto;
+    overflow: hidden;
+}
+.brand-logo{
+    margin: 0% 1%;
+}
+
+nav{
+    display: block;
+    overflow: hidden;
+}
+
+
+.home{
+    background-image: url("https://ak.picdn.net/shutterstock/videos/1047833395/thumb/11.jpg");
+    background-color: #e0f2f1;
+    width:100vw;
+    height: 90.5vh;
+}
+
+.home h1{
+    background-color: azure;
+    margin: 2%;
+    color: black;
+    display: inline;
+    position: absolute;
+    top: 30%;
+    clear: both;
+    font-family: 'Nunito', sans-serif;
+}
+
+.home h4{
+    display: inline;
+    background-color: azure;
+    color: black;
+    margin:2%;
+    clear: both;
+    position: absolute;
+    top: 50%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.home h6{
+    color: #a7ffeb;
+    position: absolute;
+    top:90%;
+    left:45%;
+}
+
+.home i{
+    color: #a7ffeb;
+    position: absolute;
+    left:50%;
+    top:95%;
+}
+
+.tips{
+    width: 100vw;
+    height:100vh;
+    margin: auto;
+    padding: 5%;
+}
+.tips h3{
+    text-align: center;
+    color: #1a237e;
+}
+
+.tips h5{
+    color: #1a237e;
+}
+
+.symptoms{
+    width:100vw;
+    height: 100vh;
+    padding: 2% 0;
+    
+    background-color: #e3f2fd;
+    color: #3e2723;
+}
+
+.symptoms h3{
+    text-align: center;
+    clear: both;
+}
+
+.symptoms table{
+    position: absolute;
+    top:220%;
+    color: #3e2723;
+}
+
+
+.faqs{
+    padding: 5% ;
+    height: 100vh;
+    width: 100vw;
+}
+
+.faqs h3{
+    color: #800000;
+    text-align: center;
+}
+
+#faqscard1, #faqscard2, #faqscard3{
+    background-color: #800000;
+}
+
+.card-reveal{
+    font-size: 130%;
+}
+
+.Map{
+    background-color: #dcedc8 ;
+    width: 100vw;
+    height: 100vh;
+    padding: 2%;
+    color: #4b5320;
+}
+
+.Map h3{
+    text-align: center;
+}
+
+.Map h5{
+    font-style: italic;
+    position: relative;
+    left: 13%;
+}
+
+.Map iframe{
+    position: relative;
+    left: 25%;
+}
+
+.yt{
+    width:100vw;
+    height:100vh;
+    padding:3%;
+    color: #f00000;
+}
+
+.yt h3{
+    text-align: center;
+}
+
+.yt iframe{
+    position: absolute;
+    left: 25%;
+}
+
+.data{
+    height: 170vh;
+    width: 100vw;
+    line-height: 0%;
+    padding-top: 5%;
+    background-color: #f2f2e1;
+}
+
+.header{
+    text-align: center;
+    color: #8ACA2B;
+}
+
+.data h2{
+    position: relative;
+    left: 50%;
+    margin: auto;
+}
+
+.globalTotal{
+    position: relative;
+    top: 10%;
+    line-height: 5%; 
+    left: 20%;
+}
+
+.globalNew{
+    position: relative;
+    line-height: 5%;
+    top: 0%;
+    padding-top: 5%;
+    left: 65%;
+}
+
+.indiaTotal{
+    position: relative;
+    line-height: 5%;
+    padding-top: 5%;
+    top: 0%;
+    left: 20%;
+}
+
+
+.indiaNew{
+    position: relative;
+    line-height: 5%;
+    padding-top: 5%;
+    top: 0%;
+    left: 65%;
+}
+
+#globalTotal{
+    color: #ff1212;
+}
+
+#indiaTotal{
+    color: #ff1212;
+}
+
+#globalNew{
+    color: #ff9900;
+}
+
+#indiaNew{
+    color: #ff9900;
+}
+
+
+.Chart{
+    width: 100vw;
+    height: 125vh;
+    position: relative;
+    text-align: center;
+    padding-bottom: 3%;
+    color: #0a0180;
+}
+
+.Chart h3{
+    padding-top: 5%;
+}
+
+.chart-container{
+    position: relative;
+    bottom: 3%;
+}
+
+.footer{
+    padding: 2.5%;
+    width: 100vw;
+    height: 25vh;
+    background-color: #1b4a91;
+    color: white;
+}
+
+.footer h5{
+    text-align: center;
+}
+
+.footer a{
+    text-decoration: underline;
+}

@@ -1,12 +1,304 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Covid Charts</title>
-</head>
-<body>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js@3/dist/chart.min.js"></script>
-	<script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<title>Covid Charts</title>-->
+		<link rel="shortcut icon" href="https://media.istockphoto.com/vectors/virus-coronavirus-bacteria-infection-ilness-microbe-organism-cell-vector-id1202901700">
+		<title>
+			CovidGuide
+		</title>
+			
+		<link href="style.css" rel="stylesheet">
+			
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+			
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	</head>
+	<body onload="myFunction()">
+		<script>
+            AOS.init();
+        </script>
+        <nav>
+            <div class="nav-wrapper cyan lighten-3">
+                <img src="https://media.istockphoto.com/vectors/virus-coronavirus-bacteria-infection-ilness-microbe-organism-cell-vector-id1202901700">
+                <a class="brand-logo">CovidGuide</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#symptoms">Symptoms</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#yt">YouTube</a></li>
+				<li><a href="#count">Case Count</a></li>
+				<li><a href="#chart">Daily Cases Chart</a></li>
+                </ul>
+            </div>
+        </nav>
+            <div class="home">
+                <a id="home"></a>
+                <div class="row"><h1>Welcome to CovidGuide!</h1></div>
+                <div class="row"><h4>Your one stop for all authentic information related to the SARS-CoV-2 virus</h4></div>
+                <a href="#tips"><div class="row"><h6>Combat misinformation</h6></div>
+                <div class="row"><i class="small material-icons">expand_more</i></div></a>
+            </div>
+
+            <a id="tips"></a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                
+                <div class="tips">
+                <h3>Tips</h3>
+                <div class="row">
+                    <div class="col s6 m3">
+                      <div class="card medium">
+                        <div class="card-image">
+                            <img src="https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/coronavirus/covid-family-safety-5/covid19-family-safety-new-bg.ashx?h=443&w=640&hash=CF0771A92519B700351BBB69D9646BE4">
+                        </div>
+                        <div class="card-content">
+                          <p><h5>Wear mask</h5></p>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="col s6 m3">
+                      <div class="card medium">
+                        <div class="card-image">
+                            <img src="https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/coronavirus/covi19-family-safety-washing-hands.ashx?h=440&w=640&hash=0289EE31B746EAFA9661C41AF74F21A2">
+                        </div>
+                        <div class="card-content">
+                          <p><h5>Wash Hands</h5></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col s6 m3">
+                        <div class="card medium">
+                          <div class="card-image">
+                            <img src="https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/coronavirus/covid19-family-safety-coronavirus.ashx?h=440&w=640&hash=350A7ED4FCDACC742CC69E2D68ABEE2A">
+                          </div>
+                          <div class="card-content">
+                            <p><h5>Practice Social Distancing</h5></p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m3">
+                        <div class="card medium">
+                          <div class="card-image">
+                            <img src="https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/coronavirus/family-safety-image-1-new2.ashx?h=440&w=640&hash=CC3667B7860B5C58B940392DD0F5D1A5">
+                          </div>
+                          <div class="card-content">
+                            <p><h5>Get vaccinated</h5></p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <a id="symptoms"></a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+            <div class="symptoms">
+                
+                <h3>Symptoms</h3>
+                <br>
+                <div data-aos="fade-up" data-aos-duration="1500">
+                <table class="centered responsive-table">
+                    <thead>
+                        <tr>
+                          <th>Symptom</th>
+                          <th>Severity</th>
+                          <th>Treatment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Fever or chills</td>
+                            <td>Mild</td>
+                            <td>Rest, fluids, normal medication</td>
+                        </tr>
+                        <tr>
+                            <td>Dry cough or Sore throat</td>
+                            <td>Mild</td>
+                            <td>Rest, fluids, normal medication</td>
+                        </tr>
+                        <tr>
+                            <td>Shortness of breath</td>
+                            <td>Mild</td>
+                            <td>Rest, fluids, avoid heavy exercise</td>
+                        </tr>
+                        <tr>
+                            <td>A loss of taste or smell</td>
+                            <td></td>
+                            <td>Rest, fluids, eat healthy food</td>
+                        </tr>
+                        <tr>
+                            <td>Tiredness, Headache, Body ache</td>
+                            <td>Mild</td>
+                            <td>Rest, fluids, take vitamins (as prescribed by doctor)</td>
+                        </tr>
+                        <tr>
+                            <td>Congestion or runny nose</td>
+                            <td>Mild</td>
+                            <td>Rest, fluids, normal medication</td>
+                        </tr>
+                        <tr>
+                            <td>Breathlessness</td>
+                            <td>Severe</td>
+                            <td>Seek immediate medical care</td>
+                        </tr>
+                        <tr>
+                            <td>Fever</td>
+                            <td>Severe</td>
+                            <td>Seek immediate medical care</td>
+                        </tr>
+                        <tr>
+                            <td>Diarrhoea or vomiting</td>
+                            <td>Severe</td>
+                            <td>Seek immediate medical care</td>
+                        </tr>
+                    </tbody>
+                </table></div></div>
+            </div>
+
+            <a id="faq"></a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+            <div class="faqs">
+                
+                <h3>FAQs</h3>
+                <div class="row">
+                    <div data-aos="flip-left" data-aos-duration="1500">
+                    <div class="col s6 m4">
+                        <div class="card medium" id="faqscard1">
+                            <!--<div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/office.jpg">
+                            </div>-->
+                            <div class="card-content">
+                            <span class="card-title activator white-text text-darken-4">How long is the incubation period for COVID-19?<i class="material-icons right">arrow_forward</i></span>
+                            <!--<p><a href="#">This is a link</a></p>-->
+                            </div>
+                            <div class="card-reveal yellow accent-4">
+                            <span class="card-title red-text text-accent-4">How long is the incubation period for COVID-19?<i class="material-icons right">close</i></span>
+                            <p>The time taken by the symptoms to first appear on an infected individual. 
+                                The incubation time for COVID-19 ranges from 1-14 days, most commonly being around 5 days.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="2000">
+                    <div class="col s6 m4">
+                        <div class="card medium" id="faqscard2">
+                            <!--<div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/office.jpg">
+                            </div>-->
+                            <div class="card-content">
+                            <span class="card-title activator white-text text-darken-4">What are some of the ways by which COVID-19 is transmitted?<i class="material-icons right">arrow_forward</i></span>
+                            <!--<p><a href="#">This is a link</a></p>-->
+                            </div>
+                            <div class="card-reveal yellow accent-4">
+                            <span class="card-title red-text text-accent-4">What are some of the ways by which COVID-19 is transmitted?<i class="material-icons right">close</i></span>
+                            <p>
+                                COVID-19 transmits when people breathe in air contaminated by droplets and small airborne particles. 
+                                The risk of breathing these in is highest when people are in close proximity, but they can be inhaled over longer distances, particularly indoors.</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div data-aos="flip-left" data-aos-duration="2500">
+                    <div class="col s6 m4">
+                        <div class="card medium" id="faqscard3">
+                            <!--<div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/office.jpg">
+                            </div> -->
+                            <div class="card-content">
+                            <span class="card-title activator white-text text-darken-4">Is the Omicron variant of COVID-19 more contagious?<i class="material-icons right">arrow_forward</i></span>
+                            <!--<p><a href="#">This is a link</a></p>-->
+                            </div>
+                            <div class="card-reveal yellow accent-4">
+                            <span class="card-title red-text text-accent-4">Is the Omicron variant of COVID-19 more contagious?<i class="material-icons right">close</i></span>
+                            <p>
+                                Scientists say that Omicron is more contagious, but it doesn't appear to transmit in ways that are different 
+                                from earlier versions of the virus. That means the same precaution rules apply but become more important, 
+                                even if you are vaccinated or have been infected before</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <a id="map"></a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <div class="Map">
+                    
+                    <h3>Map</h3>
+                    <br>
+                    <h5>Hospitals near IIT Delhi:</h5>
+                    <iframe width="800" height="450" style="border:0" loading="lazy" allowfullscreen
+                        src="https://www.google.com/maps/embed/v1/search?q=hospitals+near+IIT+Delhi+Main+Road,+IIT+Campus,+Indian+Institute+of+Technology+Delhi,+Hauz+Khas,+New+Delhi,+Delhi,+India&key=AIzaSyDEAjd1v_x9S591niqpE20tea0PjPZ1ncw"></iframe>
+                </div>
+            </div>
+
+            <a id="yt"></a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <div class="yt">
+                    
+                    <h3>YouTube Playlist</h3>
+                    <br>
+                    <iframe width="750" height="450" src="https://www.youtube.com/embed/videoseries?list=PLJ8cMiYb3G5dBbOh_8kPN5s5aJHt1UCwn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+			<a id="count"></a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <div class="data">
+					<script src="casedata.js"></script>
+					<div class="header"><h3>Case Count</h3></div>
+					<div data-aos="fade-up-right" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+						<div class="globalTotal"><h4>Total Global Cases:</h4><br><h3><span id="globalTotal"></span></h3></div>
+					</div>
+					<div data-aos="fade-up-left" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+						<div class="globalNew"><h4>New Global Cases: </h4><br><h3><span id="globalNew"></span></h3></div>
+					</div>
+					<div data-aos="fade-up-right" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+						<div class="indiaTotal"><h4>Total Cases-India: </h4><br><h3><span id="indiaTotal"></span></h3></div>
+					</div>
+					<div data-aos="fade-up-left" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+						<div class="indiaNew"><h4>New Cases-India: </h4><br><h3><span id="indiaNew"></span></h3></div>
+					</div>
+				</div>
+			</div>
+
+			<a id="chart"></a>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <div class="Chart">
+					<h3>India's COVID-19 Cases: A Chart</h3>
+					<div class="chart-container" style="position: relative; height:50vh; width:90vw; padding-left: 10%; padding-top: 7%;">
+						<canvas id="myChart"></canvas>
+					</div>
+					<script src="https://cdn.jsdelivr.net/npm/chart.js@3/dist/chart.min.js"></script>
+					<script src="script.js"></script>
+				</div>
+			</div>
+
+		
+
+            <div class="footer">
+                <h5>Made by <a href="https://github.com/Mitali-N" target="_blank">Mitali Nanda</a></h5>
+                <h5>Email Id: <a href="mailto:ph1210818@iitd.ac.in?subject=Query%20regarding%20CovidGuide&body=Hey!%20I%20visited%20your%20website%20and%20had%20a%20query...">ph1210818@iitd.ac.in</a></h5>
+            </div>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+	</body>
 </html>
