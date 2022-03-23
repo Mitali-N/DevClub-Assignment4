@@ -1,3 +1,13 @@
+## Output:
+`SECRET`= `CIGAR`
+<img width="1440" alt="Screenshot 2022-03-23 at 11 58 43 AM" src="https://user-images.githubusercontent.com/97724334/159644881-bf21a152-3501-4d9f-b3fe-3633c732582e.png">
+<img width="1440" alt="Screenshot 2022-03-23 at 11 59 03 AM" src="https://user-images.githubusercontent.com/97724334/159644902-ec669419-9e8f-42b8-81fc-8024778e0c91.png">
+<img width="1440" alt="Screenshot 2022-03-23 at 12 02 21 PM" src="https://user-images.githubusercontent.com/97724334/159644908-713d90da-eeac-43d0-a693-e3da8d4a58aa.png">
+<img width="1440" alt="Screenshot 2022-03-23 at 12 02 47 PM" src="https://user-images.githubusercontent.com/97724334/159644916-11efd82d-dd28-4429-972a-00db587086ce.png">
+
+
+
+
 # Wordle+
 Check out [Wordle](https://www.nytimes.com/games/wordle/index.html). It is a game where the computer has fixed a 5 letter word, let's call that the `SECRET`, and the user has to guess that word. Let's say the user makes a guess, then the computer gives a feedback for each letter in the guess: 
 * Green if that letter is in the same position in the `SECRET`
