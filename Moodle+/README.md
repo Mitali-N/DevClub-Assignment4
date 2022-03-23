@@ -1,3 +1,10 @@
+## Output:
+
+
+https://user-images.githubusercontent.com/97724334/159644532-a33ac2cc-c3ee-4fd8-8450-ad92e0c62dba.mov
+
+
+
 # Moodle+
 You must have used moodle in your first semester, and observed it required you to solve a simple math question as a CAPTCHA.
 
